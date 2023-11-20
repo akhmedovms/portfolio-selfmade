@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .align-element {
+    @apply mx-auto max-w-6xl px-8;
+  }
+}
+
+.js-p {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.js-p:hover {
+  color: #f7df1e;
+}
+
+.html-p {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.html-p:hover {
+  color: #e34f26;
+}
+
+.css-p {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.css-p:hover {
+  color: #1572b6;
+}
+
+.react-p {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.react-p:hover {
+  color: #61dafb;
+}
+
+.tailwind-p {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.tailwind-p:hover {
+  color: #06b6d4;
+}
+
+.bt-p {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.bt-p:hover {
+  color: #7952b3;
+}
+
+.redux-p {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.redux-p:hover {
+  color: #764abc;
+}
+
+.js-p:hover {
+  filter: drop-shadow(0 0 30px #f7df1e);
+  transition: filter 0.2s ease;
+}
+.html-p:hover {
+  filter: drop-shadow(0 0 30px #e34f26);
+  transition: filter 0.2s ease;
+}
+.css-p:hover {
+  filter: drop-shadow(0 0 30px #1572b6);
+  transition: filter 0.2s ease;
+}
+.react-p:hover {
+  filter: drop-shadow(0 0 30px #61dafb);
+  transition: filter 0.2s ease;
+}
+.redux-p:hover {
+  filter: drop-shadow(0 0 30px #764abc);
+  transition: filter 0.2s ease;
+}
+.tailwind-p:hover {
+  filter: drop-shadow(0 0 30px #06b6d4);
+  transition: filter 0.2s ease;
+}
+.bt-p:hover {
+  filter: drop-shadow(0 0 30px #7952b3);
+  transition: filter 0.2s ease;
+}
+
+.animated-icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.animated-icon:hover {
+  transform: scale(1.1);
+}
+.animated-icon:active {
+  transform: scale(0.9);
+}
