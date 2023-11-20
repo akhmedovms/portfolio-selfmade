@@ -15,13 +15,16 @@ function Footer() {
           <p>Copyright © 2023 - All right reserved</p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <Link to="#" className="animated-icon">
+          <Link to="https://t.me/Ahmedov95005" className="animated-icon">
             <FaTelegram size={30} className="text-white" />
           </Link>
-          <Link to="#" className="animated-icon">
+          <Link
+            to="https://www.instagram.com/akhmedov_0205"
+            className="animated-icon"
+          >
             <FaInstagram size={30} className="text-white" />
           </Link>
-          <Link to="#" className="animated-icon">
+          <Link to="https://github.com/akhmedovms" className="animated-icon">
             <FaGithub size={30} className="text-white" />
           </Link>
         </nav>
