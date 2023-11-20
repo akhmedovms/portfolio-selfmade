@@ -8,8 +8,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav id="navbar" className="bg-base-200">
-      <div className="navbar align-element">
+    <nav id="navbar" className="bg-base-200 ">
+      <div className="navbar  align-element">
         <div className="navbar-start">
           {/* TITLE */}
           <a

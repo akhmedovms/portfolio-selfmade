@@ -15,7 +15,7 @@ function Darklight() {
   };
 
   return (
-    <div className="dropdown ml-auto">
+    <div className="dropdown dropdown-end ml-auto">
       <label tabIndex={0} className="btn m-1">
         <div className="flex items-center gap-2">
           <span>Theme</span>
