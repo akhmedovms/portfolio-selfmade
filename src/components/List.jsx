@@ -8,7 +8,7 @@ function List() {
   const [showScrollUp, setShowScrollUp] = useState(false);
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({ once: true });
 
     const handleScroll = () => {
       const isScrolled = window.scrollY > 200;
