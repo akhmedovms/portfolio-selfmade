@@ -6,12 +6,12 @@ function Footer() {
     <footer id="footer" className="bg-neutral">
       <div className="align-element footer items-center p-4 bg-neutral text-neutral-content">
         <aside className="items-center gap-5 grid-flow-col">
-          <Link
-            to="/"
+          <a
+            href="#navbar"
             className="hidden lg:flex btn btn-secondary text-3xl items-center"
           >
             MS
-          </Link>
+          </a>
           <p>Copyright © 2023 - All right reserved</p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

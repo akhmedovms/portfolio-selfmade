@@ -4,16 +4,16 @@ import Darklight from "./Darklight";
 
 const Navbar = () => {
   return (
-    <nav className="bg-base-200">
+    <nav id="navbar" className="bg-base-200">
       <div className="navbar align-element">
         <div className="navbar-start ">
           {/* TITLE */}
-          <NavLink
-            to="/"
+          <a
+            href="#navbar"
             className="hidden lg:flex btn btn-secondary text-3xl items-center"
           >
             MS
-          </NavLink>
+          </a>
           {/* DROPDOWN */}
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
