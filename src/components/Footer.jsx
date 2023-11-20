@@ -3,7 +3,7 @@ import { FaTelegram, FaInstagram, FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-neutral">
+    <footer id="footer" className="bg-neutral">
       <div className="align-element footer items-center p-4 bg-neutral text-neutral-content">
         <aside className="items-center gap-5 grid-flow-col">
           <Link
