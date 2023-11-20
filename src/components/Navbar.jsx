@@ -41,7 +41,7 @@ const Navbar = () => {
                 className="menu p-4 w-80 min-h-full bg-base-200 text-base-content gap-3"
               >
                 <div className="pb-6">
-                  <h2 className="text-2xl">Do you liked my portfolio : )</h2>
+                  <h2 className="text-2xl">Do you like my portfolio : )</h2>
                 </div>
                 <li>
                   <Link to="About" smooth={true} offset={-70} duration={500}>
