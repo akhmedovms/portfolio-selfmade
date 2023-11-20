@@ -1,13 +1,21 @@
 import { Link } from "react-router-dom";
 import { FaTelegram, FaInstagram, FaGithub } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
 
 function Footer() {
+  const scrollToTop = () => {
+    scroll.scrollToTop({ smooth: true });
+  };
   return (
     <footer id="footer" className="bg-neutral">
       <div className="align-element footer items-center p-4 bg-neutral text-neutral-content">
         <aside className="items-center gap-5 grid-flow-col">
           <a
             href="#navbar"
+            onClick={scrollToTop}
+            smooth={true}
+            offset={-70}
+            duration={500}
             className="hidden lg:flex btn btn-secondary text-3xl items-center"
           >
             MS

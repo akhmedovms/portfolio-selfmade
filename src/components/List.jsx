@@ -1,13 +1,30 @@
-import React, { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { links } from "../Links";
 import { Link } from "react-router-dom";
 
 function List() {
+  const [showScrollUp, setShowScrollUp] = useState(false);
+
   useEffect(() => {
     AOS.init();
+
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 200;
+      setShowScrollUp(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
+  const handleScrollUp = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <>
@@ -63,6 +80,14 @@ function List() {
             );
           })}
       </ul>
+      {showScrollUp && (
+        <button
+          className="fixed bottom-5 right-5 bg-primary text-white px-4 py-2 rounded-full shadow-md"
+          onClick={handleScrollUp}
+        >
+          Scroll Up
+        </button>
+      )}
     </>
   );
 }

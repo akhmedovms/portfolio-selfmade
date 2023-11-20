@@ -1,15 +1,23 @@
 import { FaBarsStaggered } from "react-icons/fa6";
-import { NavLink } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 import Darklight from "./Darklight";
 
 const Navbar = () => {
+  const scrollToTop = () => {
+    scroll.scrollToTop({ smooth: true });
+  };
+
   return (
     <nav id="navbar" className="bg-base-200">
       <div className="navbar align-element">
-        <div className="navbar-start ">
+        <div className="navbar-start">
           {/* TITLE */}
           <a
             href="#navbar"
+            onClick={scrollToTop}
+            smooth={true}
+            offset={-70}
+            duration={500}
             className="hidden lg:flex btn btn-secondary text-3xl items-center"
           >
             MS
@@ -24,27 +32,39 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52"
             >
               <li>
-                <a href="#About">About</a>
+                <Link to="About" smooth={true} offset={-70} duration={500}>
+                  About
+                </Link>
               </li>
               <li>
-                <a href="#footer">Contact</a>
+                <Link to="footer" smooth={true} offset={-70} duration={500}>
+                  Contact
+                </Link>
               </li>
               <li>
-                <a href="#Projects">Projects</a>
+                <Link to="Projects" smooth={true} offset={-70} duration={500}>
+                  Projects
+                </Link>
               </li>
             </ul>
           </div>
         </div>
-        <div className="navbar-end hidden lg:flex ">
+        <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal text-[15px] gap-3">
             <li>
-              <a href="#About">About</a>
+              <Link to="About" smooth={true} offset={-70} duration={500}>
+                About
+              </Link>
             </li>
             <li>
-              <a href="#footer">Contact</a>
+              <Link to="footer" smooth={true} offset={-70} duration={500}>
+                Contact
+              </Link>
             </li>
             <li>
-              <a href="#Projects">Projects</a>
+              <Link to="Projects" smooth={true} offset={-130} duration={500}>
+                Projects
+              </Link>
             </li>
           </ul>
         </div>
@@ -57,4 +77,5 @@ const Navbar = () => {
     </nav>
   );
 };
+
 export default Navbar;
