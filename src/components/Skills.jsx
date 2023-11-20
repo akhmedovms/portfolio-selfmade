@@ -14,7 +14,7 @@ function Languages() {
     AOS.init();
   }, []);
   return (
-    <div className="pb-40 flex justify-center items-center flex-col mt-20">
+    <div className="pb-40 flex justify-center items-center flex-col mt-40 md:mt-20">
       <div className="pb-12 flex gap-5" data-aos="fade-up">
         <h1 className="text-5xl font-semibold tracking-wide border-b-4 pb-3 flex gap-3">
           Skills

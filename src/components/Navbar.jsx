@@ -23,30 +23,43 @@ const Navbar = () => {
             MS
           </a>
           {/* DROPDOWN */}
-          <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
-              <FaBarsStaggered className="h-6 w-6" />
-            </label>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52"
-            >
-              <li>
-                <Link to="About" smooth={true} offset={-70} duration={500}>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="footer" smooth={true} offset={-70} duration={500}>
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link to="Projects" smooth={true} offset={-70} duration={500}>
-                  Projects
-                </Link>
-              </li>
-            </ul>
+          <div className="drawer z-10">
+            <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              <label htmlFor="my-drawer" className="btn btn-ghost lg:hidden">
+                <FaBarsStaggered className="h-6 w-6" />
+              </label>
+            </div>
+            <div className="drawer-side">
+              <label
+                htmlFor="my-drawer"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <ul
+                tabIndex={0}
+                className="menu p-4 w-80 min-h-full bg-base-200 text-base-content gap-3"
+              >
+                <div className="pb-6">
+                  <h2 className="text-2xl">Do you liked my portfolio : )</h2>
+                </div>
+                <li>
+                  <Link to="About" smooth={true} offset={-70} duration={500}>
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link to="footer" smooth={true} offset={-70} duration={500}>
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link to="Projects" smooth={true} offset={-70} duration={500}>
+                    Projects
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="navbar-end hidden lg:flex">
@@ -70,7 +83,9 @@ const Navbar = () => {
         </div>
         <div className="pl-10 ml-auto">
           {/* THEME SETUP */}
-          <Darklight />
+          <div>
+            <Darklight />
+          </div>
           {/* CART LINK */}
         </div>
       </div>
