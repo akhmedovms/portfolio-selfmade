@@ -5,7 +5,7 @@ import List from "../components/List";
 function Home() {
   return (
     <>
-      <div className="">
+      <div>
         <About />
       </div>
       <div>

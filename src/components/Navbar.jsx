@@ -4,9 +4,8 @@ import Darklight from "./Darklight";
 
 const Navbar = () => {
   const scrollToTop = () => {
-    scroll.scrollToTop({ smooth: true });
+    scroll.scrollToTop({ smooth: "true" });
   };
-
   return (
     <nav id="navbar" className="bg-base-200 ">
       <div className="navbar  align-element">
