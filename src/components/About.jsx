@@ -12,7 +12,7 @@ function About() {
         user-friendly web experiences. With expertise in HTML, CSS, and
         JavaScript, I bring designs to life and ensure seamless functionality.
         Proficient in React and experienced with technologies like Tailwind CSS,
-        Bootstrap, Redux, and DaisyUI, I create beautiful and responsive
+        Bootstrap, Redux Toolkit, and DaisyUI, I create beautiful and responsive
         interfaces. Detail-oriented and innovative, I thrive in fast-paced
         environments, constantly expanding my skills to deliver outstanding user
         experiences.
