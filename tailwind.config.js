@@ -6,14 +6,6 @@ export default {
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
-    themes: [
-      "winter",
-      "dracula",
-      "cyberpunk",
-      "retro",
-      "aqua",
-      "synthwave",
-      "dark",
-    ],
+    themes: ["winter", "cyberpunk", "synthwave", "dark", "business", "cmyk"],
   },
 };

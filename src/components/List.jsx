@@ -28,10 +28,23 @@ function List() {
 
   return (
     <>
-      <div id="Projects" className="flex justify-center" data-aos="fade-up">
-        <h1 className="text-5xl font-semibold tracking-wide border-b-4 pb-4 inline">
-          Projects
-        </h1>
+      <div
+        id="Projects"
+        className="flex justify-center items-center "
+        data-aos="fade-up"
+      >
+        <div
+          id="Projects"
+          className="flex justify-center items-center gap-3"
+          data-aos="fade-up"
+        >
+          <h1 className="text-5xl font-semibold tracking-wide">Projects</h1>
+          <img
+            src="https://daisyui.com/images/emoji/yawning-face.webp"
+            alt="face"
+            width={72}
+          />
+        </div>
       </div>
       <ul className="mt-14">
         {links &&

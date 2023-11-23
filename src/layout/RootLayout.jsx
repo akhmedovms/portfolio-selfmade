@@ -7,7 +7,7 @@ function RootLayout() {
   return (
     <div>
       <Navbar />
-      <main className="align-element">
+      <main className="align-element ">
         <Outlet />
       </main>
       <Footer />

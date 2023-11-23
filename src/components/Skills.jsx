@@ -16,7 +16,7 @@ function Languages() {
   return (
     <div className="pb-40 flex justify-center items-center flex-col mt-40 md:mt-20">
       <div className="pb-12 flex gap-5" data-aos="fade-up">
-        <h1 className="text-5xl font-semibold tracking-wide border-b-4 pb-3 flex gap-3">
+        <h1 className="text-5xl font-semibold tracking-wide flex gap-3">
           Skills
           <p className="text-5xl text-blue-400 ">
             : <span className="text-5xl text-yellow-400">)</span>

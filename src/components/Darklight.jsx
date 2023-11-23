@@ -61,10 +61,10 @@ function Darklight() {
             type="radio"
             name="theme-dropdown"
             className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-            aria-label="Retro"
-            value="retro"
-            onChange={() => handleThemeChange("retro")}
-            checked={selectedTheme === "retro"}
+            aria-label="Cmyk"
+            value="cmyk"
+            onChange={() => handleThemeChange("cmyk")}
+            checked={selectedTheme === "cmyk"}
           />
         </li>
         <li>
@@ -94,10 +94,10 @@ function Darklight() {
             type="radio"
             name="theme-dropdown"
             className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-            aria-label="Aqua"
-            value="aqua"
-            onChange={() => handleThemeChange("aqua")}
-            checked={selectedTheme === "aqua"}
+            aria-label="Business"
+            value="business"
+            onChange={() => handleThemeChange("business")}
+            checked={selectedTheme === "business"}
           />
         </li>
       </ul>

@@ -6,7 +6,14 @@ function About() {
       id="About"
       className=" h-screen flex justify-center text-start md:text-center flex-col gap-5 mt-36 md:mt-0"
     >
-      <h1 className="text-5xl tracking-wide">Hi! I Am Muhammad Sadiy : )</h1>
+      <div className="flex items-center justify-center gap-3">
+        <h1 className="text-5xl tracking-wide">Hi! I Am Muhammad Sadiy</h1>
+        <img
+          src="https://daisyui.com/images/emoji/smiling-face-with-sunglasses.webp"
+          alt="face"
+          width={72}
+        />
+      </div>
       <p className="text-center tracking-wide">
         I am a frontend developer specializing in creating engaging and
         user-friendly web experiences. With expertise in HTML, CSS, and
