@@ -15,13 +15,15 @@ function Languages() {
   }, []);
   return (
     <div className="pb-40 flex justify-center items-center flex-col mt-40 md:mt-20">
-      <div className="pb-12 flex gap-5" data-aos="fade-up">
+      <div className="pb-12 flex gap-3 items-center" data-aos="fade-up">
         <h1 className="text-5xl font-semibold tracking-wide flex gap-3">
           Skills
-          <p className="text-5xl text-blue-400 ">
-            : <span className="text-5xl text-yellow-400">)</span>
-          </p>
         </h1>
+        <img
+          src="https://daisyui.com/images/emoji/smiling-face-with-sunglasses.webp"
+          alt="face"
+          width={72}
+        />
       </div>
       <div
         className="flex flex-wrap justify-center gap-10 items-center"

@@ -8,11 +8,6 @@ function About() {
     >
       <div className="flex items-center justify-center gap-3">
         <h1 className="text-5xl tracking-wide">Hi! I Am Muhammad Sadiy</h1>
-        <img
-          src="https://daisyui.com/images/emoji/smiling-face-with-sunglasses.webp"
-          alt="face"
-          width={72}
-        />
       </div>
       <p className="text-center tracking-wide">
         I am a frontend developer specializing in creating engaging and
