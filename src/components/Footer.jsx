@@ -23,7 +23,7 @@ function Footer() {
           <p>Copyright © 2023 - All right reserved</p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <Link to="https://t.me/Ahmedov95005" className="animated-icon">
+          <Link to="https://t.me/Frontenddev05" className="animated-icon">
             <FaTelegram size={30} className="text-white" />
           </Link>
           <Link
